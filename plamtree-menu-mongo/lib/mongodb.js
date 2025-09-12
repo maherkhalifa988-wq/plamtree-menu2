@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
-  throw new Error("الرجاء تحديد MONGODB_URI في متغيرات البيئة");
+  throw new Error("اmongodb+srv://maher:<1234>@anakhel.a3swgn0.mongodb.net/?retryWrites=true&w=majority&appName=anakhel");
 }
 
 let cached = global.mongoose;
