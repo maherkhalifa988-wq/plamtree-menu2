@@ -1,0 +1,28 @@
+:root {
+  --accent: #2ecc71;
+  --secondary: #f1c40f;
+  --bg: #fdfdfc;
+  --glass: rgba(255, 255, 255, 0.8);
+}
+html,body,#__next{height:100%}
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  background: var(--bg);
+}
+.container{max-width:1100px;margin:24px auto;padding:16px}
+.header{display:flex;align-items:center;gap:16px}
+.logo{height:64px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:16px}
+.card{background:var(--glass);border-radius:16px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,0.08);display:flex;flex-direction:column;align-items:center;transition:transform .2s, box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(0,0,0,0.15)}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.groupTitle{margin-top:28px;font-weight:700;font-size:20px}
+.actions{display:flex;gap:8px;margin-top:8px}
+.btn{background:var(--accent);color:white;border:none;padding:10px 16px;border-radius:10px;cursor:pointer;font-weight:bold}
+.btn:hover{background:var(--secondary)}
+.small{font-size:14px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.search{padding:8px;border-radius:8px;border:1px solid #ddd}
+.footer{margin-top:40px;color:#666;font-size:14px}
+.bg-cover{position:fixed;inset:0;z-index:-1;opacity:0.12;object-fit:cover}
