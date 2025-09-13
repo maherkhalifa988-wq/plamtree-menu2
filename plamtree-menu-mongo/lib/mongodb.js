@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
-  throw new Error("mongodb+srv://maher:<1234>@anakhel.a3swgn0.mongodb.net/?retryWrites=true&w=majority&appName=anakhel");
+  throw new Error("MONGODB_URI is not defined in the environment variables");
 }
 
 let cached = global.mongoose;
